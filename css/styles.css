@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: "Arsenal";
+}
+
+footer {
+  background-color: #4a5841;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+
+h1 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar-menu {
+  display: none !important;
+}
+
+.title {
+  color: #4a5841;
+  text-align: center;
+  padding: 3rem;
+}
+
+header nav ul h1 {
+  padding: 0.5rem 1rem;
+}
+
+nav h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  padding: 0rem 2rem;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+}
+
+.main-picture {
+  background-image: url("../assets/images/three-plants.jpg");
+  height: 100vh;
+  width: 100%;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header-navbar {
+  background-color: #4a5841;
+  list-style: none;
+  color: rgb(175, 170, 144);
+  padding: 1rem 0rem;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar-link {
+  color: rgb(175, 170, 144);
+  text-decoration: none;
+  padding: 3rem;
+  font-size: 1.5rem;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.footer-links {
+  color: rgb(175, 170, 144);
+  list-style: none;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 400;
+  padding-top: 9rem;
+  line-height: 4.2rem;
+}
+
+.dropdown-menu .navbar-link {
+  padding: 0 1rem;
+}
+
+.menu-icon {
+  font-size: 2rem;
+}
+
+/*grid*/
+
+.grid-img-plants {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 250px);
+  padding: 1rem 3rem;
+  gap: 0.5rem;
+}
+
+.grid-img-element {
+  width: 100%;
+  height: 100%;
+}
+
+/*Mobile*/
+@media only screen and (max-width: 320px) {
+  .grid-img-plants {
+    grid-template-columns: 1fr;
+  }
+  .navbar-menu {
+    display: block !important;
+  }
+  .navbar-links {
+    display: none;
+  }
+  footer {
+    flex-direction: column;
+    font-size: 1rem;
+    justify-content: center;
+  }
+}
+
+/*Tablet*/
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .navbar-menu {
+    display: block !important;
+  }
+  .navbar-links {
+    display: none;
+  }
+  footer {
+    flex-direction: column;
+    font-size: 1.5rem;
+    justify-content: center;
+  }
+}
