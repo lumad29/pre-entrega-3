@@ -1,0 +1,5 @@
+@mixin flex($align, $list) {
+  display: flex;
+  align-items: $align;
+  list-style: $list;
+}

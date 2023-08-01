@@ -1,0 +1,25 @@
+{
+  "name": "pre-entrega-3",
+  "version": "1.0.0",
+  "description": "- HTML - CSS - BOOTSTRAP - FLEX",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss ./scss/styles.scss ./css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lumad29/pre-entrega-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lumad29/pre-entrega-2/issues"
+  },
+  "homepage": "https://github.com/lumad29/pre-entrega-2#readme",
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.0.1"
+  }
+}
