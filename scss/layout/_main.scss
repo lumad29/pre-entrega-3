@@ -2,12 +2,13 @@
 main {
   height: 100%;
   width: 100%;
+  overflow: overlay;
 }
 
 .header-navbar {
-  background-color: #4a5841;
+  background-color: $background-color-green;
   list-style: none;
-  color: #afaa90;
+  color: $font-color-beige;
   padding: 0.35rem 0rem;
   position: fixed;
   width: 100%;
@@ -25,7 +26,7 @@ main {
 }
 
 .title {
-  color: #4a5841;
+  color: $font-color-green;
   text-align: center;
   font-size: 2rem;
   font-weight: 400;
@@ -33,20 +34,20 @@ main {
   line-height: 3rem;
 }
 
-.section-2 {
-  background-color: rgb(159, 154, 126);
-  width: 100%;
-}
-
 /*section-2*/
 
 .section-2 {
-  padding: 2rem 2.5rem;
+  background-color: rgb(159, 154, 126);
+  width: 100%;
   color: $font-color-green;
 }
 
 .section-2 h1 {
-  color: #44523c;
+  color: $font-color-green;
+}
+
+.pic-mix-2-padding {
+  padding-right: 10rem !important;
 }
 
 .material-symbols-outlined {

@@ -10,7 +10,6 @@
     <meta name="copyright" content="bloom" />
 
     <title>Bloom</title>
-    <link rel="stylesheet" href="./css/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
@@ -21,6 +20,9 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./scss/styles.scss" /> -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -39,41 +41,64 @@
   </head>
   <body>
     <header class="header-navbar">
-      <nav>
-        <h1>
-          <img class="logo-img" src="./assets/images/logo.png" alt="" />bloom
-        </h1>
-        <ul class="navbar-links">
-          <li><a href="./pages/plants.html" class="navbar-link">Plants</a></li>
-          <li><a href="./pages/care.html" class="navbar-link">Care</a></li>
-          <li><a href="./pages/gifts.html" class="navbar-link">Gifts</a></li>
-          <li>
-            <a href="./pages/contact.html" class="navbar-link">Contact</a>
-          </li>
-          <li><a href="./pages/about.html" class="navbar-link">About</a></li>
-        </ul>
-        <div class="btn-group navbar-menu">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            <i class="bi bi-list menu-icon"></i>
-          </button>
-          <ul class="dropdown-menu">
-            <li>
-              <a href="./pages/plants.html" class="navbar-link">Plants</a>
-            </li>
-            <li><a href="./pages/care.html" class="navbar-link">Care</a></li>
-            <li><a href="./pages/gifts.html" class="navbar-link">Gifts</a></li>
-            <li>
-              <a href="./pages/contact.html" class="navbar-link">Contact</a>
-            </li>
-            <li><a href="./pages/about.html" class="navbar-link">About</a></li>
-          </ul>
+      <div class="container">
+        <div class="d-flex align-items-center">
+          <div class="w-100 d-flex align-items-center">
+            <img class="logo-img" src="./assets/images/logo.png" alt="" />
+            <h1>bloom</h1>
+          </div>
+          <div>
+            <nav>
+              <ul class="navbar-links">
+                <li>
+                  <a href="./pages/plants.html" class="navbar-link">Plants</a>
+                </li>
+                <li>
+                  <a href="./pages/care.html" class="navbar-link">Care</a>
+                </li>
+                <li>
+                  <a href="./pages/gifts.html" class="navbar-link">Gifts</a>
+                </li>
+                <li>
+                  <a href="./pages/contact.html" class="navbar-link">Contact</a>
+                </li>
+                <li>
+                  <a href="#about" class="navbar-link">About</a>
+                </li>
+              </ul>
+              <div class="btn-group navbar-menu">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="bi bi-list menu-icon"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="./pages/plants.html" class="navbar-link">Plants</a>
+                  </li>
+                  <li>
+                    <a href="./pages/care.html" class="navbar-link">Care</a>
+                  </li>
+                  <li>
+                    <a href="./pages/gifts.html" class="navbar-link">Gifts</a>
+                  </li>
+                  <li>
+                    <a href="./pages/contact.html" class="navbar-link"
+                      >Contact</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./pages/about.html" class="navbar-link">About</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
         </div>
-      </nav>
+      </div>
     </header>
     <main>
       <!--main-section-->
@@ -83,59 +108,201 @@
         </h2>
       </section>
       <!--main-section-2-->
-      <section class="section-2">
-        <div class="container col-xxl-8 px-4">
-          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-            <div class="col-10 col-sm-8 col-lg-6">
-              <img
-                src="./assets/images/people-2.jpg"
-                class="d-block mx-lg-auto img-fluid img-animation"
-                alt="Bootstrap Themes"
-                width="700"
-                height="500"
-                loading="lazy"
-              />
-            </div>
-            <div class="col-lg-6">
-              <h1 class="display-5 fw-bold lh-1 mb-3 fs-4">
-                <span class="material-symbols-outlined"> eco </span> What we do
-                <span class="material-symbols-outlined"> eco </span>
-              </h1>
+      <div id="about" />
+      <section class="section-2 py-5">
+        <div class="container">
+          <div>
+            <div class="row flex-lg-row-reverse align-items-center">
+              <div class="col-10 col-sm-8 col-lg-6">
+                <img
+                  src="./assets/images/pic-mix-2.png"
+                  class="d-block mx-auto img-fluid"
+                  alt="Bootstrap Themes"
+                  width="600"
+                  height="400"
+                  loading="lazy"
+                />
+              </div>
+              <div class="col-lg-6">
+                <h1 class="display-5 fw-medium lh-1 mb-3 fs-4 py-3">
+                  <span class="material-symbols-outlined"> eco </span> What we
+                  do
+                  <span class="material-symbols-outlined"> eco </span>
+                </h1>
 
-              <p class="lead">
-                Quickly design and customize responsive mobile-first sites with
-                Bootstrap, the world’s most popular front-end open source
-                toolkit, featuring Sass variables and mixins, responsive grid
-                system, extensive prebuilt components, and powerful JavaScript
-                plugins.
-              </p>
+                <p class="lead lh-lg fs-5">
+                  Bloom is here to help make your world a little greener. We
+                  know the importance of connecting with nature. Something that
+                  sometimes gets lost in today's society. That is why we pay
+                  close attention to developing healthy thriving plants at our
+                  greenhouse that will have a positive impact in your life. Our
+                  plants are grown with love and quality check, as well as
+                  shipped with experience and special care, making sure only the
+                  best ones arrive at your door.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div
+              class="row flex-lg-row-reverse align-items-center g-5 py-5 lh-lg"
+            >
+              <div class="col-lg-9">
+                <h2 class="display-5 fw-medium lh-1 mb-3 fs-4 py-4">
+                  <span class="material-symbols-outlined"> eco </span>Our
+                  mission<span class="material-symbols-outlined"> eco </span>
+                </h2>
+                <p class="lead">
+                  At bloom we focus in building a community of plant lovers. We
+                  provide special guidance for each plant so that they can
+                  thrive at yor home, office, or favorite place. You are only
+                  one click away from becoming a part of our group of plant
+                  lovers!
+                </p>
+
+                <p class="lead">
+                  Join our community on Instagram
+                  <button type="button" class="btn btn-color">Join us</button>
+                </p>
+              </div>
+              <div class="col-10 col-sm-8 col-lg-3">
+                <img
+                  src="./assets/images/people-1.jpg"
+                  class="d-block mx-lg-auto"
+                  alt="Bootstrap Themes"
+                  width="220"
+                  loading="lazy"
+                />
+              </div>
             </div>
           </div>
         </div>
-        <div class="container col-xxl-8 px-4">
-          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-            <div class="col-lg-6">
-              <h1 class="display-5 fw-bold lh-1 mb-3 fs-4">
-                <span class="material-symbols-outlined"> eco </span> What we do
-                <span class="material-symbols-outlined"> eco </span>
-              </h1>
-              <p class="lead">
-                Quickly design and customize responsive mobile-first sites with
-                Bootstrap, the world’s most popular front-end open source
-                toolkit, featuring Sass variables and mixins, responsive grid
-                system, extensive prebuilt components, and powerful JavaScript
-                plugins.
-              </p>
+      </section>
+      <section class="section-2">
+        <div class="container py-5">
+          <h2 class="display-5 fw-medium lh-1 mb-3 fs-4 py-4">
+            <span class="material-symbols-outlined"> eco </span>
+            Featured collections
+            <span class="material-symbols-outlined"> eco </span>
+          </h2>
+          <!-- <div class="row">
+            <div class="col">
+              <div>
+                <img
+                  src="./assets/images/indoor-plants.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body card-color">
+                  <p class="card-text d-flex justify-content-center py-4 fs-4">
+                    Indoor plants
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="col-10 col-sm-8 col-lg-6">
+            <div class="col">
+              <div>
+                <img
+                  src="./assets/images/outdoor-plants.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body card-color">
+                  <p class="card-text d-flex justify-content-center py-4 fs-4">
+                    Outdoor plants
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div>
+                <img
+                  src="./assets/images/pet.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body card-color">
+                  <p class="card-text d-flex justify-content-center py-4">
+                    Pet-friendly
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div>
+                <img
+                  src="./assets/images/gift.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body card-color">
+                  <p class="card-text d-flex justify-content-center">Gifts</p>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <!-- <div class="grid-section-2">
+            <img
+              src="./assets/images/indoor-plants.jpg"
+              alt=""
+              class="grid-section-2-img"
+            />
+            <img
+              src="./assets/images/outdoor-plants.png"
+              alt=""
+              class="grid-section-2-img"
+            />
+            <img
+              src="./assets/images/pet.jpg"
+              alt=""
+              class="grid-section-2-img"
+            />
+            <img
+              src="./assets/images/gift.png"
+              alt=""
+              class="grid-section-2-img"
+            />
+          </div> -->
+          <div class="cards-section-2">
+            <div class="card" style="width: 16rem">
               <img
-                src="./assets/images/people-1.jpg"
-                class="d-block mx-lg-auto img-fluid img-animation"
-                alt="Bootstrap Themes"
-                width="700"
-                height="500"
-                loading="lazy"
+                src="./assets/images/indoor-plants.jpg"
+                class="card-img-top"
+                alt="..."
               />
+              <div class="card-body">
+                <p class="card-text">Indoor plants</p>
+              </div>
+            </div>
+            <div class="card" style="width: 16rem">
+              <img
+                src="./assets/images/outdoor-plants.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">Indoor plants</p>
+              </div>
+            </div>
+            <div class="card" style="width: 16rem">
+              <img
+                src="./assets/images/pet.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">Indoor plants</p>
+              </div>
+            </div>
+            <div class="card" style="width: 16rem">
+              <img
+                src="./assets/images/gift.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">Indoor plants</p>
+              </div>
             </div>
           </div>
         </div>
@@ -144,24 +311,33 @@
 
     <footer>
       <div>
-        <ul class="footer-links">
+        <ul class="footer-links fs-5">
           <li>About</li>
           <li>Contact</li>
           <li>Reviews</li>
         </ul>
       </div>
-      <div>
-        <ul class="footer-links">
+      <div class="text-center">
+        <ul class="footer-links fs-5">
           <li>Join Bloom</li>
-          <li>Contact</li>
-          <li>Reviews</li>
+          <li class="fs-6">Sign up for special offers and inspiration</li>
+          <input type="text" class="my-3 fs-6" placeholder="Enter your email" />
         </ul>
       </div>
       <div>
-        <ul class="footer-links">
-          <li>Join Bloom</li>
-          <li>Contact</li>
-          <li>Reviews</li>
+        <ul class="footer-links fs-5">
+          <li>Delivery & returns</li>
+          <li>Plant blog</li>
+          <li>
+            <a href="./pages/plants.html"
+              ><img src="./assets/images/instagram-icon.png" alt="" />
+              <span> </span>
+              <img src="./assets/images/twitter-logo.png" alt="" />
+              <span> </span>
+              <img src="./assets/images/linkedin-logo.png" alt="" />
+            </a>
+          </li>
+          <!-- <li>Reviews</li> -->
         </ul>
       </div>
     </footer>
