@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Pick you favorite plant" />
-    <meta name="keywords" content="planta, jardinaria" />
+    <meta name="keywords" content="planta, jardineria" />
     <meta name="author" content="lucrealoi" />
     <meta name="copyright" content="bloom" />
     <title>Bloom</title>
@@ -15,6 +15,10 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
     <link
       rel="stylesheet"
@@ -38,7 +42,7 @@
         <div class="d-flex align-items-center">
           <a
             href="../index.html"
-            class="w-100 d-flex align-items-center text-decoration-none"
+            class="w-100 d-flex align-items-center text-decoration-none bloomLink"
           >
             <img class="logo-img" src="../assets/images/logo.png" alt="" />
             <h1>bloom</h1>
@@ -75,21 +79,19 @@
                 </button>
                 <ul class="dropdown-menu">
                   <li>
-                    <a href="./pages/plants.html" class="navbar-link">Plants</a>
+                    <a href="./plants.html" class="navbar-link">Plants</a>
                   </li>
                   <li>
-                    <a href="./pages/care.html" class="navbar-link">Care</a>
+                    <a href="./care.html" class="navbar-link">Care</a>
                   </li>
                   <li>
-                    <a href="./pages/gifts.html" class="navbar-link">Gifts</a>
+                    <a href="./gifts.html" class="navbar-link">Gifts</a>
                   </li>
                   <li>
-                    <a href="./pages/contact.html" class="navbar-link"
-                      >Contact</a
-                    >
+                    <a href="./contact.html" class="navbar-link">Contact</a>
                   </li>
                   <li>
-                    <a href="./pages/about.html" class="navbar-link">About</a>
+                    <a href="../index.html" class="navbar-link">About</a>
                   </li>
                 </ul>
               </div>
@@ -100,28 +102,175 @@
     </header>
 
     <main>
-      <section class="main-picture"><h2 class="title">Gifts</h2></section>
+      <!-- <section class="main-picture"><h2 class="title">Gifts</h2></section> -->
+      <section class="section-2">
+        <div class="container py-5">
+          <h2 class="display-5 fw-medium lh-1 mb-3 fs-4 py-4">
+            <span class="material-symbols-outlined"> eco </span>
+            Gifts
+            <span class="material-symbols-outlined"> eco </span>
+          </h2>
+          <!-- <div class="row">
+            <div class="col">
+              <div>
+                <img
+                  src="./assets/images/indoor-plants.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body card-color">
+                  <p class="card-text d-flex justify-content-center py-4 fs-4">
+                    Indoor plants
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div>
+                <img
+                  src="./assets/images/outdoor-plants.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body card-color">
+                  <p class="card-text d-flex justify-content-center py-4 fs-4">
+                    Outdoor plants
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div>
+                <img
+                  src="./assets/images/pet.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body card-color">
+                  <p class="card-text d-flex justify-content-center py-4">
+                    Pet-friendly
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div>
+                <img
+                  src="./assets/images/gift.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body card-color">
+                  <p class="card-text d-flex justify-content-center">Gifts</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          -->
+          <!-- <div class="grid-section-2">
+            <img
+              src="./assets/images/indoor-plants.jpg"
+              alt=""
+              class="grid-section-2-img"
+            />
+            <img
+              src="./assets/images/outdoor-plants.png"
+              alt=""
+              class="grid-section-2-img"
+            />
+            <img
+              src="./assets/images/pet.jpg"
+              alt=""
+              class="grid-section-2-img"
+            />
+            <img
+              src="./assets/images/gift.png"
+              alt=""
+              class="grid-section-2-img"
+            />
+          </div> -->
+          <div class="cards-section-2x row">
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="card">
+                <img
+                  src="/assets/images/gift-1.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-text">Birthdays</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="card">
+                <img
+                  src="../assets/images/gift-2.jpeg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-text">Valentine's</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="card">
+                <img
+                  src="../assets/images/gift-3.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-text">For pets</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="card">
+                <img
+                  src="../assets/images/gift-4.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-text">Wedding & Anniversary</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
       <div>
-        <ul class="footer-links">
+        <ul class="footer-links fs-5">
           <li>About</li>
           <li>Contact</li>
           <li>Reviews</li>
         </ul>
       </div>
-      <div>
-        <ul class="footer-links">
+      <div class="text-center">
+        <ul class="footer-links fs-5">
           <li>Join Bloom</li>
-          <li>Contact</li>
-          <li>Reviews</li>
+          <li class="fs-6">Sign up for special offers and inspiration</li>
+          <input type="text" class="my-3 fs-6" placeholder="Enter your email" />
         </ul>
       </div>
       <div>
-        <ul class="footer-links">
-          <li>Join Bloom</li>
-          <li>Contact</li>
-          <li>Reviews</li>
+        <ul class="footer-links fs-5">
+          <li>Delivery & returns</li>
+          <li>Plant blog</li>
+          <li>
+            <a href="./pages/plants.html" class="text-decoration-none"
+              ><img src="./assets/images/instagram-icon.png" alt="" />
+              <span> </span>
+              <img src="./assets/images/twitter-logo.png" alt="" />
+              <span> </span>
+              <img src="./assets/images/linkedin-logo.png" alt="" />
+            </a>
+          </li>
+          <!-- <li>Reviews</li> -->
         </ul>
       </div>
     </footer>

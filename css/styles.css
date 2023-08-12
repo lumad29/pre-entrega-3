@@ -79,6 +79,9 @@ nav h1 {
   width: 2.6rem;
   height: 3.5rem; }
 
+.bloomLink {
+  color: #afaa90; }
+
 p,
 h1,
 h2,
@@ -102,16 +105,6 @@ main {
   height: 100%;
   width: 100%;
   overflow: overlay; }
-
-.header-navbar {
-  background-color: #4a5841;
-  list-style: none;
-  color: #afaa90;
-  padding: 0.35rem 0rem;
-  position: fixed;
-  width: 100%;
-  display: flex;
-  justify-content: center; }
 
 .main-picture {
   background-image: url("../assets/images/three-plants-1.png");
@@ -144,6 +137,19 @@ main {
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48; }
 
+.btn-color {
+  background-color: #4a5841;
+  color: #afaa90; }
+
+.btn-color:hover {
+  background-color: #56684b;
+  color: #afaa90; }
+
+.card-img-top {
+  width: 100%;
+  height: 25vw;
+  object-fit: cover; }
+
 .grid-img-plants {
   display: grid;
   width: 100%;
@@ -159,11 +165,8 @@ main {
 
 /*main section2 grid*/
 .grid-section-2 {
-  display: grid;
   width: 100%;
-  grid-template-columns: repeat(4, 1fr);
-  padding: 1rem 4rem;
-  gap: 2rem; }
+  padding: 1rem 4rem; }
 
 .grid-section-2-img {
   width: 100%;
@@ -225,4 +228,20 @@ textarea[type="text"] {
   background-color: pink; }
 
 .button-color {
+  color: #afaa90 !important; }
+
+.main-picture-care {
+  background-image: url("/assets/images/plant-care.jpg");
+  min-height: 100vh;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.accordion-btn {
+  background-color: #4a5841 !important;
   color: #afaa90 !important; }

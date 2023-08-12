@@ -38,7 +38,7 @@
         <div class="d-flex align-items-center">
           <a
             href="../index.html"
-            class="w-100 d-flex align-items-center text-decoration-none"
+            class="w-100 d-flex align-items-center text-decoration-none bloomLink"
           >
             <img class="logo-img" src="../assets/images/logo.png" alt="" />
             <h1>bloom</h1>
@@ -75,21 +75,19 @@
                 </button>
                 <ul class="dropdown-menu">
                   <li>
-                    <a href="./pages/plants.html" class="navbar-link">Plants</a>
+                    <a href="./plants.html" class="navbar-link">Plants</a>
                   </li>
                   <li>
                     <a href="./pages/care.html" class="navbar-link">Care</a>
                   </li>
                   <li>
-                    <a href="./pages/gifts.html" class="navbar-link">Gifts</a>
+                    <a href="./gifts.html" class="navbar-link">Gifts</a>
                   </li>
                   <li>
-                    <a href="./pages/contact.html" class="navbar-link"
-                      >Contact</a
-                    >
+                    <a href="./contact.html" class="navbar-link">Contact</a>
                   </li>
                   <li>
-                    <a href="./pages/about.html" class="navbar-link">About</a>
+                    <a href="../index.html" class="navbar-link">About</a>
                   </li>
                 </ul>
               </div>
@@ -100,28 +98,182 @@
     </header>
 
     <main>
-      <section class="main-picture"><h2 class="title">Care</h2></section>
+      <section class="main-picture-care">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-5">
+              <div class="accordion">
+                <div class="accordion-item accordion-btn">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button accordion-btn"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                    Plants
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Indoor plants
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckChecked"
+                          checked
+                        />
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Outdoor plants
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item accordion-btn">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed accordion-btn"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      Accordion Item #2
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Default checkbox
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckChecked"
+                          checked
+                        />
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Checked checkbox
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item accordion-btn">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed accordion-btn"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Default checkbox
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckChecked"
+                          checked
+                        />
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Checked checkbox
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col-8 bg-danger"></div>
+          </div> -->
+        </div>
+      </section>
     </main>
     <footer>
       <div>
-        <ul class="footer-links">
+        <ul class="footer-links fs-5">
           <li>About</li>
           <li>Contact</li>
           <li>Reviews</li>
         </ul>
       </div>
-      <div>
-        <ul class="footer-links">
+      <div class="text-center">
+        <ul class="footer-links fs-5">
           <li>Join Bloom</li>
-          <li>Contact</li>
-          <li>Reviews</li>
+          <li class="fs-6">Sign up for special offers and inspiration</li>
+          <input type="text" class="my-3 fs-6" placeholder="Enter your email" />
         </ul>
       </div>
       <div>
-        <ul class="footer-links">
-          <li>Join Bloom</li>
-          <li>Contact</li>
-          <li>Reviews</li>
+        <ul class="footer-links fs-5">
+          <li>Delivery & returns</li>
+          <li>Plant blog</li>
+          <li>
+            <a href="./pages/plants.html" class="text-decoration-none"
+              ><img src="./assets/images/instagram-icon.png" alt="" />
+              <span> </span>
+              <img src="./assets/images/twitter-logo.png" alt="" />
+              <span> </span>
+              <img src="./assets/images/linkedin-logo.png" alt="" />
+            </a>
+          </li>
+          <!-- <li>Reviews</li> -->
         </ul>
       </div>
     </footer>

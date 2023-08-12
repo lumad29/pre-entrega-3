@@ -5,16 +5,16 @@ main {
   overflow: overlay;
 }
 
-.header-navbar {
-  background-color: $background-color-green;
-  list-style: none;
-  color: $font-color-beige;
-  padding: 0.35rem 0rem;
-  position: fixed;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
+// .header-navbar {
+//   background-color: $background-color-green;
+//   list-style: none;
+//   color: $font-color-beige;
+//   padding: 0.35rem 0rem;
+//   position: fixed;
+//   width: 100%;
+//   display: flex;
+//   justify-content: center;
+// }
 
 .main-picture {
   background-image: url("../assets/images/three-plants-1.png");
@@ -52,4 +52,20 @@ main {
 
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+.btn-color {
+  background-color: $background-color-green;
+  color: $font-color-beige;
+}
+
+.btn-color:hover {
+  background-color: rgb(86, 104, 75);
+  color: $font-color-beige;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 25vw;
+  object-fit: cover;
 }
