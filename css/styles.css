@@ -54,7 +54,8 @@ nav h1 {
   position: fixed;
   width: 100%;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  z-index: 200; }
 
 .navbar-link {
   color: #afaa90;
@@ -245,3 +246,12 @@ textarea[type="text"] {
 .accordion-btn {
   background-color: #4a5841 !important;
   color: #afaa90 !important; }
+
+/*main plants*/
+.main-plant {
+  background-color: #afaa90;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }

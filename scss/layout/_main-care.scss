@@ -16,3 +16,14 @@
   background-color: $background-color-green !important;
   color: $font-color-beige !important;
 }
+
+/*main plants*/
+
+.main-plant {
+  background-color: $background-color-beige;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
